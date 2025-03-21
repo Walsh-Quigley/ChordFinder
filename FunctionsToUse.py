@@ -9,4 +9,3 @@ def findChords(scale, chord, placement):
         if chord == "C":
             sequence = ""
     return sequence
-
