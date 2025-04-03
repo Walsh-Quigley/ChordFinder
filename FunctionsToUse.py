@@ -1,11 +1,13 @@
+import numpy as np
+import matplotlib.pyplot as plt
+from PIL import Image
+
+Chords = ["C"]
 
 
-Chords = ["C", ""]
-Scales = ["Diatonic"]
+def findVoicing(chord):
+    img1Address = './Chords/C/cBase.PNG'
 
 
-def findChords(scale, chord, placement):
-    if scale == "Diatonic":
-        if chord == "C":
-            sequence = ""
-    return sequence
+
+

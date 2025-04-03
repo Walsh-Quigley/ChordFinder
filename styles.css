@@ -1,0 +1,40 @@
+/* Basic styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full screen height */
+    background-color: #f0f0f0;
+}
+
+.container {
+    display: flex;
+    align-items: center; /* Vertically align items in the container */
+    justify-content: flex-start; /* Align button to the left */
+    width: 80%; /* Container width, adjust as needed */
+}
+
+#imageButton {
+    cursor: pointer;
+}
+
+.hidden-images {
+    display: none;
+    margin-left: 20px; /* Space between the button and images */
+    display: flex;
+    gap: 10px; /* Space between images */
+}
+
+.additional-images img {
+    width: 100px; /* Image size, adjust as needed */
+    height: auto;
+    border-radius: 5px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.additional-images img:hover {
+    transform: scale(1.1); /* Slight zoom on hover */
+}
