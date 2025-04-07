@@ -7,17 +7,31 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Image Button -->
-    <img id="imageButton" src="chords/C/cBase.png" alt="Click Me" onclick="showImages()" width="150">
+    <div class="containerC">
 
-    <!-- Hidden Images (will show when button is pressed) -->
-    <div id="imageContainer" class="hidden-images">
-        <div class="additional-images">
-            <img src="chords/C/cVoice2.PNG" alt="Image 1">
-            <img src="chords/C/cVoice3.PNG" alt="Image 2">
-            <img src="chords/C/cVoice4.PNG" alt="Image 3">
-            <!-- Add more images as needed -->
+        <img id="imageButton" src="chords/C/cBase.png" alt="Click Me" onclick="showImages('imageContainer')" width="150">
+
+        <div id="imageContainer" class="hidden-images-c">
+            <div class="additional-images">
+                <img src="chords/C/cVoice2.PNG" alt="Image 1">
+                <img src="chords/C/cVoice3.PNG" alt="Image 2">
+                <img src="chords/C/cVoice4.PNG" alt="Image 3">
+            </div>
         </div>
+    </div>
+
+    <div class="containerD">
+        <img id="imageButton" src="chords/C/cBase.png" alt="Click Me" onclick="showImages('imageContainer2')" width="150">
+
+        <div id="imageContainer2" class="hidden-images-d">
+            <div class="additional-images">
+                <img src="chords/C/cVoice2.PNG" alt="Image 1">
+                <img src="chords/C/cVoice3.PNG" alt="Image 2">
+                <img src="chords/C/cVoice4.PNG" alt="Image 3">
+            </div>
+        </div>
+
+        
     </div>
 
     <script src="scripts.js"></script> <!-- External JavaScript file -->

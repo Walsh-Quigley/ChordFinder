@@ -4,28 +4,39 @@ body {
     margin: 0;
     padding: 0;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: flex-start;  /* Align all content to the left */
+    align-items: flex-start;      /* Align content to the top */
     height: 100vh; /* Full screen height */
     background-color: #f0f0f0;
+    flex-direction: column;
 }
 
-.container {
+/* Container for button and images */
+.containerC {
     display: flex;
-    align-items: center; /* Vertically align items in the container */
-    justify-content: flex-start; /* Align button to the left */
-    width: 80%; /* Container width, adjust as needed */
+    align-items: flex-start;  /* Align button and images to the top */
+    justify-content: flex-start; /* Align to the left */
+    padding: 20px;  /* Optional: adds some padding to the container */
 }
 
+.containerD {
+    display: flex;
+    align-items: flex-start;  /* Align button and images to the top */
+    justify-content: flex-start; /* Align to the left */
+    padding: 20px;  /* Optional: adds some padding to the container */
+}
+
+/* Image Button */
 #imageButton {
     cursor: pointer;
+    margin-right: 20px;  /* Space between the button and the images */
 }
 
-.hidden-images {
-    display: none;
-    margin-left: 20px; /* Space between the button and images */
-    display: flex;
+/* Hidden Images (Initially hidden) */
+.hidden-images-c {
+    display: none;  /* Initially hide the images */
     gap: 10px; /* Space between images */
+    flex-wrap: wrap;  /* Allow images to wrap if necessary */
 }
 
 .additional-images img {
