@@ -49,3 +49,9 @@ body {
 .additional-images img:hover {
     transform: scale(1.1); /* Slight zoom on hover */
 }
+
+.hidden-images-d {
+    display: none;  /* Initially hide the images */
+    gap: 10px; /* Space between images */
+    flex-wrap: wrap;  /* Allow images to wrap if necessary */
+}
